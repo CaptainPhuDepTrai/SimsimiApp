@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected String doInBackground(List<ChatModel>... params) {
-           String url = String.format("http://sandbox.api.simsimi.com/request.p?key=%s&lc=en&ft=1.0&text=%s",getString(R.string.simsimi_api),text);
+           String url = String.format("http://sandbox.api.simsimi.com/request.p?key=36026717-2c31-498d-b416-d60001ae3c0f&lc=en&ft=1.0&text=hi",text);
             models = params[0];
             HttpDataHandler httpDataHandler = new HttpDataHandler();
             stream = httpDataHandler.GetHTTPData(url);
